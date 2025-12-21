@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Managment System</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="animation-on pink-mode">
+    <!-- Start Burger Btn -->
+    <div class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- End Burger Btn -->
+
+    <!-- Start Manu-Items -->
+    <div class="menu-items">
+      <a
+        href="https://github.com/Eng-Muntadher/Student-Management-System"
+        target="_blank"
+        class="button"
+        >Source Code</a
+      >
+      <a href="usage.html" target="_blank" class="button">Usage Guide</a>
+
+      <div class="txt">Background Effect</div>
+      <div class="animation">
+        <div class="circle"></div>
+      </div>
+      <div class="txt">Blue Mode</div>
+      <div class="blue">
+        <div class="circle-2"></div>
+      </div>
+    </div>
+    <!-- End Menu Items -->
+
+    <!-- Start Main Div -->
+    <div class="main">
+      <button class="gradient-button students">Students</button>
+      <button class="gradient-button grades">Grades</button>
+      <button class="gradient-button subjects">Subjects</button>
+      <button class="gradient-button exams">Exams</button>
+      <button class="gradient-button gpa">GPA's</button>
+    </div>
+    <!-- End Main Div -->
+
+    <!-- Load scripts in order: utilities first, then features, then main -->
+    <script src="js/api.js"></script>
+    <script src="js/dom-utils.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/students.js"></script>
+    <script src="js/grades.js"></script>
+    <script src="js/subjects.js"></script>
+    <script src="js/exams.js"></script>
+    <script src="js/gpa.js"></script>
+    <script src="js/main.js"></script>
+    <!-- LAST! -->
+  </body>
+</html>

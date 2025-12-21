@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System - Usage Guide</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4faff;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #3a9bfc;
+      }
+      ul {
+        line-height: 1.8;
+      }
+      code {
+        background: #eaf6ff;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+      .example {
+        background: #f0f8ff;
+        padding: 15px;
+        border-left: 4px solid #3a9bfc;
+        margin: 10px 0 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Management System - Usage Guide</h1>
+
+      <p>
+        This guide explains how to
+        <strong>add, edit, and delete student information</strong> using the
+        Student Management System.
+      </p>
+
+      <h2>1. Adding a Student</h2>
+      <ul>
+        <li>
+          Click on the Students button and then click on the
+          <strong>"Add Students"</strong> section.
+        </li>
+        <li>
+          Fill in the <em>Student Name</em>, <em>Class</em>,
+          <em>teacher notes</em>, <em>subjects</em> and hit enter.
+        </li>
+        <li>
+          Click the <strong>"Add Student"</strong> button to save the student in
+          the database.
+        </li>
+      </ul>
+      <div class="example">
+        Example: <code>Ahmed Al-Rawi, Class 10, Math & Science, Grade: 95</code>
+      </div>
+
+      <h2>2. Editing a Student</h2>
+      <ul>
+        <li>Locate the student you want to update in the student table.</li>
+        <li>Click the <strong>cell</strong> that has the editable info.</li>
+        <li>
+          Update the information such as <em>Name</em>, <em>teacher notes</em>,
+          or <em>exam results</em>.
+        </li>
+        <li>Click <strong>anywhere</strong> on the screen to apply changes.</li>
+      </ul>
+      <div class="example">
+        Example: Changing <code>Grade from 85 to 90</code> for Sara Hussein.
+      </div>
+
+      <h2>3. Deleting a Student</h2>
+      <ul>
+        <li>Find the student you wish to remove in the table.</li>
+        <li>
+          Click the <strong>"-"</strong> button (light blue button) next to
+          their record.
+        </li>
+        <li>
+          Confirm the deletion when prompted. The student will be permanently
+          removed from the database.
+        </li>
+      </ul>
+      <div class="example">
+        Example: Deleting <code>Omar Khalid</code> from the system.
+      </div>
+
+      <h2>Additional Tips</h2>
+      <ul>
+        <li>
+          You can toggle between <strong>Pink Mode</strong> and
+          <strong>Blue Mode</strong> for better visibility.
+        </li>
+        <li>
+          You can toggle the <strong>background animations</strong> for better
+          control.
+        </li>
+        <li>
+          Always ensure the MySQL server is running locally via XAMPP before
+          performing CRUD operations.
+        </li>
+        <li>
+          Use the search or filter options to quickly find specific students or
+          subjects.
+        </li>
+      </ul>
+
+      <p>
+        For more details, refer to the <strong>README.md</strong> and
+        <code>schema.sql</code> files in the project.
+      </p>
+    </div>
+  </body>
+</html>
