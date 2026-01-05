@@ -48,7 +48,7 @@ function startAddExam() {
         return;
       }
 
-      getExamTypeAndDate(main, gradeName);
+      getExamTypeAndDate(gradeName);
     }
   });
 }
@@ -89,7 +89,7 @@ function getExamTypeAndDate(gradeName) {
         }
 
         const examSubject = main.children[2].children[0].value;
-        getStudentsForExam(main, gradeName, examType, examDate, examSubject);
+        getStudentsForExam(gradeName, examType, examDate, examSubject);
       }
     });
   });
@@ -110,7 +110,6 @@ function getStudentsForExam(gradeName, examType, examDate, examSubject) {
 
   read_write_2_DB(query).then((students) => {
     displayStudentScoreInputs(
-      main,
       students,
       gradeName,
       examType,
@@ -162,7 +161,7 @@ function displayStudentScoreInputs(
   const submitBtn = main.lastChild;
 
   submitBtn.addEventListener("click", () => {
-    saveExamResults(main, gradeName, examType, examDate, examSubject);
+    saveExamResults(gradeName, examType, examDate, examSubject);
   });
 }
 

@@ -1,0 +1,167 @@
+/* Start Main Gradient Btn */
+.gradient-button {
+  background: var(--main-gradient);
+  border: none;
+  border-radius: 1.875rem; /* 30px */
+  color: #fff;
+  padding: 1.5625rem 3.125rem; /* 25px 50px */
+  width: 25rem; /* 400px */
+  max-width: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 4px 10px */
+  transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.3); /* 6px 15px */
+}
+/* End Main Gradient Btn */
+
+/* Start Delete-Button */
+.red-button {
+  position: fixed;
+  bottom: 1.25rem; /* 20px */
+  right: 1.25rem; /* 20px */
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 1.25rem 1.875rem; /* 20px 30px */
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1.875rem; /* 30px */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* 4px 6px */
+  z-index: 10;
+}
+
+.red-button:hover {
+  transform: translateY(-0.25rem); /* 4px */
+  box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2); /* 8px 12px */
+}
+/* End Delete-Button */
+
+/* Start Delete-Row-Button */
+.delete {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5625rem; /* 25px */
+  height: 1.5625rem; /* 25px */
+  right: 0.5rem; /* 8px */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #4facfe;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+  border: none;
+}
+
+/* This is the minus sign inside the delete row btn */
+.delete span {
+  width: 0.9375rem; /* 15px */
+  height: 0.25rem; /* 4px */
+  background-color: white;
+}
+
+.delete:hover {
+  opacity: 1;
+}
+/* End Delete-Row-Button */
+
+/* Start question mark */
+.question-mark {
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.875rem; /* 30px */
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #333;
+  border: 0.125rem solid #4facfe; /* 2px */
+  border-radius: 50%;
+  background-color: #f4faff;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.question-mark:hover {
+  border-color: #3a9bfc;
+  box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.15); /* 6px 12px */
+}
+
+/* The container div for both the question mark icon and the select input */
+.mark-container {
+  display: flex;
+  justify-content: space-between;
+  width: 27.0625rem; /* 433px */
+  align-items: center;
+  margin: 1.25rem; /* 20px */
+}
+/* End question mark */
+
+/* Start Student-Subjects Check Input */
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  font-size: 1.875rem; /* 30px */
+  justify-content: center;
+  color: white;
+  width: 25rem; /* 400px */
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  margin: 0.8125rem 0; /* 13px */
+}
+
+/* Check input for each subject */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* The replacement for the normal HTML box for check input */
+.custom-checkbox .checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.875rem; /* 30px */
+  width: 1.875rem; /* 30px */
+  background-color: #f4faff;
+  border: 0.125rem solid #4facfe; /* 2px */
+  border-radius: 0.375rem; /* 6px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #3a9bfc;
+  border-color: #3a9bfc;
+  box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.15); /* 6px 12px */
+}
+
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.5rem; /* 8px */
+  top: 0.25rem; /* 4px */
+  width: 0.5rem; /* 8px */
+  height: 0.875rem; /* 14px */
+  border: solid white;
+  border-width: 0 0.1875rem 0.1875rem 0; /* 3px */
+  transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+/* End Student-Subjects Check Input */

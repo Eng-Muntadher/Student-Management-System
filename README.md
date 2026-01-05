@@ -2,58 +2,19 @@
 
 A **Student Management System** built to efficiently manage students' grades, classes, subjects, and more. This app features **CRUD operations**, a modern interface with **two themes (pink and blue)**, and a fully functional **frontend and backend** using HTML, CSS, JavaScript, Python, SQL, MySQL, and XAMPP as a local server.
 
+**YouTube Walkthrough:** [Watch the full project demo](https://youtu.be/-qiwMc3VMCw)
+
 ---
 
 ## Features
 
-- Add, update, delete, and view students and their grades.
+- Add, update, delete, and view students and their info, tests and subjects.
 - Manage subjects, classes, and student-specific data.
+- Optimistic UI updates for a better UX.
 - Two beautiful themes: **Pink Mode** and **Blue Mode**.
 - Toggle for background animations.
 - Responsive and clean user interface.
 - Local database integration using **MySQL** and **Python HTTP server**.
-
----
-
-## Screenshots
-
-![Screenshot 1](/github/home.png)  
-![Screenshot 2](/github/options.png)
-![Screenshot 3](/github/table.png)
-![Screenshot 4](/github/search.png)
-
----
-
-## Folder Structure
-
-Student-Management-System/
-├── frontend/
-│ ├── index.html
-│ ├── usage.html
-│ ├── css/
-│ │ └── style.css
-│ └── js/
-│ ├── api.js
-│ ├── dom-utils.js
-│ ├── exams.js
-│ ├── gpa.js
-│ ├── grades.js
-│ ├── main.js
-│ ├── menu.js
-│ ├── students.js
-│ ├── subjects.js
-│ └── theme.js
-|
-├── backend/
-│ ├── server.py
-│ └── database/
-│ └── schema.sql
-├── LICENSE
-└── README.md
-└── github
-
-> Frontend folder contains all the HTML, CSS, and JS files.  
-> Backend folder contains the Python server script handling CRUD operations and API requests.
 
 ---
 
@@ -63,6 +24,15 @@ Student-Management-System/
 - **Backend:** Python (`http.server` module)
 - **Database:** MySQL, SQL
 - **Local Server:** XAMPP
+
+---
+
+## Screenshots
+
+![Screenshot 1](/github/home.png)  
+![Screenshot 2](/github/options.png)
+![Screenshot 3](/github/table.png)
+![Screenshot 4](/github/search.png)
 
 ---
 
@@ -79,7 +49,7 @@ cd Student-Management-System
 
 ```sql
 -- Run this in your MySQL client
-SOURCE path/to/schema.sql;
+SOURCE backend/database/schema.sql;
 ```
 
 3. **Database Connection Credentials** in server.py:
@@ -126,7 +96,3 @@ This project is licensed under the [MIT License](./LICENSE).
 ---
 
 Built by Muntadher Ahmed
-
-```
-
-```

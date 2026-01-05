@@ -4,47 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students Managment System</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/components.css" />
   </head>
 
   <body class="animation-on pink-mode">
     <!-- Start Burger Btn -->
-    <div class="menu">
+    <button
+      class="menu"
+      type="button"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="sidebar-navigation"
+    >
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
     <!-- End Burger Btn -->
 
     <!-- Start Manu-Items -->
-    <div class="menu-items">
-      <a
-        href="https://github.com/Eng-Muntadher/Student-Management-System"
-        target="_blank"
-        class="button"
-        >Source Code</a
-      >
-      <a href="usage.html" target="_blank" class="button">Usage Guide</a>
+    <nav
+      id="sidebar-navigation"
+      class="menu-items"
+      aria-label="Main navigation"
+    >
+      <div>
+        <a
+          href="https://github.com/Eng-Muntadher/Student-Management-System"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+          >Source Code</a
+        >
+        <a
+          href="usage.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+          >Usage Guide</a
+        >
+        <a
+          href="http://localhost/phpmyadmin/index.php?route=/database/structure&db=data_base_project"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+          >View Database</a
+        >
+      </div>
 
-      <div class="txt">Background Effect</div>
-      <div class="animation">
-        <div class="circle"></div>
+      <div style="margin-bottom: 40px">
+        <div class="toggle-container">
+          <label for="background-effect-toggle" class="txt"
+            >Background Effect</label
+          >
+          <button
+            id="background-effect-toggle"
+            class="animation"
+            type="button"
+            role="switch"
+            aria-checked="true"
+          >
+            <span class="circle"></span>
+          </button>
+        </div>
+
+        <div class="toggle-container">
+          <label for="blue-mode-toggle" class="txt">Blue Mode</label>
+          <button
+            id="blue-mode-toggle"
+            class="blue"
+            type="button"
+            role="switch"
+            aria-checked="false"
+          >
+            <span class="circle-2"></span>
+          </button>
+        </div>
       </div>
-      <div class="txt">Blue Mode</div>
-      <div class="blue">
-        <div class="circle-2"></div>
-      </div>
-    </div>
+    </nav>
     <!-- End Menu Items -->
 
     <!-- Start Main Div -->
-    <div class="main">
-      <button class="gradient-button students">Students</button>
-      <button class="gradient-button grades">Grades</button>
-      <button class="gradient-button subjects">Subjects</button>
-      <button class="gradient-button exams">Exams</button>
-      <button class="gradient-button gpa">GPA's</button>
-    </div>
+    <main class="main">
+      <button class="gradient-button students" type="button">Students</button>
+      <button class="gradient-button grades" type="button">Grades</button>
+      <button class="gradient-button subjects" type="button">Subjects</button>
+      <button class="gradient-button exams" type="button">Exams</button>
+      <button class="gradient-button gpa" type="button">GPA's</button>
+    </main>
     <!-- End Main Div -->
 
     <!-- Load scripts in order: utilities first, then features, then main -->

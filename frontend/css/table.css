@@ -1,0 +1,56 @@
+/* Start Table Design */
+table {
+  width: 60%;
+  margin: 1.25rem auto; /* 20px */
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+  border-radius: 0.625rem; /* 10px */
+  text-align: center;
+}
+
+table thead {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th {
+  padding: 0.75rem 0.9375rem; /* 12px 15px */
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+table tbody tr {
+  background-color: #f4faff;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+/* For a two color effect between two neighbor rows */
+table tbody tr:nth-child(odd) {
+  background-color: #eaf6ff;
+}
+
+table tbody tr:hover {
+  background-color: #d9f0ff;
+}
+
+table td {
+  padding: 0.75rem 0.9375rem; /* 12px 15px */
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  max-width: 3.125rem; /* 50px */
+  overflow-x: auto;
+}
+
+table td:focus {
+  outline-color: #3a9bfc;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+/* End Table Design */
